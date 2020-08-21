@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@600;700&family=Nunito:ital,wght@0,400;0,700;1,200&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END RESET */
+
+/* START GLOBAL STYLES */
+
+nav, h1, h2, h3, h4, h5 {
+    font-family: 'Halant', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+    font-family: 'Nunito', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* END GLOBAL STYLES */
+
+/* START BODY BORDER */
+html:before,html:after,body:before,body:after{
+    content:"";
+    background:#162b47;
+    position:fixed;
+    display:block;
+    z-index:5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html:before{
+    height:12px;
+    left:0;
+    right:0;
+    top:0;
+}
+html:after{
+    width:12px;
+    top:0;
+    right:0;
+    bottom:0;
+}
+body:before{
+    height:12px;
+    right:0;
+    bottom:0;
+    left:0;
+}
+body:after{
+    width:12px;
+    top:0;
+    bottom:0;
+    left:0;
+}
+/* END BODY BORDER */
+
+/* START TEST STYLES */
+/* .page-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+/* END TEST STYLES */
+
+/* START FULL BODY STYLES FOR ALL WIDTHS */
+/* .page-container{
+    margin: 20px 25px;
+    width: 60%;
+
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 30px;
+
+} */
+
+.page-container{
+    width: 1150px;
+    margin: 0 auto 30px;
 }
 
-.App-link {
-  color: #61dafb;
+#projects{
+    font-size: 2.5rem;
+    margin-top: 20vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 1200px){
+    .page-container{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 768px){
+    #projects{
+        text-align: center;
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width: 500px){
+    .page-container{
+        width: 90vw;
+    }
 }
