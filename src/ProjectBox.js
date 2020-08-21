@@ -6,11 +6,7 @@ const SProjectBox = styled.div`
   margin-top: 4rem;
   border-radius: 5px;
   text-align: left;
-  background: rgb(52,144,220);
-  background: ${(props) =>
-    props.swap
-    ?"linear-gradient(to right, #0f0c29, #302b63, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */"
-    : "linear-gradient(to right, #2193b0, #6dd5ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */"};
+  background-color: ${props => props.swap ? '#1C3D5A' : '#2779BD'};
 
   display: flex;
   color: white;
@@ -46,12 +42,12 @@ const SProjectBox = styled.div`
 
         button{
           border: 1px solid white;
-          color: #162b47;
+          color: #12283A;
           padding: 8px 45px;
           font-size: 1rem;
           font-family: 'Nunito';
           border-radius: 5px;
-          background-color: ${(props) => (props.swap ? "#3490DC" : "#1C3D5A")};
+          background-color: ${(props) => (props.swap ? '#2779BD': '#1C3D5A'  )};
           color: white;
 
           &:hover{
@@ -65,7 +61,7 @@ const SProjectBox = styled.div`
         font-style: italic;
         display: flex;
         justify-content: space-evenly;
-        background-color: ${(props) => (props.swap ? "#3490DC" : "#1C3D5A")};
+        background-color: ${(props) => (props.swap ? '#2779BD': '#1C3D5A')};
         border-radius: 5px;
         border: 1px solid white;
         
@@ -85,6 +81,7 @@ const SProjectBox = styled.div`
   @media (max-width: 1200px){
     position: relative;
     .titles{
+      // background-color: orange;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -110,7 +107,7 @@ const SProjectBox = styled.div`
       height: 45%;
     }
   }
-  @media (max-width: 992px){
+  @media (max-width: 1200px){
     img{
       height: 35%;
     }
@@ -123,13 +120,16 @@ const SProjectBox = styled.div`
     }
     }
   }
-  @media (max-width: 768px){
+
+
+  @media (max-width: 1000px){
     flex-direction: column-reverse;
     justify-content: space-evenly;
     height: fit-content;
     .titles{
       position: relative;
       margin: 0;
+      
     }
     img{
       height: 250px;
@@ -176,7 +176,7 @@ const ProjectBox = ({project}) => {
           </div>
         </div>
 
-        <p>
+        <p className='top-desc'>
        {project.desc}
         </p>
         <p>

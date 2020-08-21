@@ -10,9 +10,8 @@ flex-direction: column;
 align-items: center;
 h2{
     font-size: 2.5rem;
-    @media (max-width: 7690px){
+    @media (max-width: 768px){
         text-align: center;
-        background-color: magenta;
     }
 }
 `

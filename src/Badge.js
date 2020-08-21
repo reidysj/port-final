@@ -17,7 +17,7 @@ svg{
     transition: .5s ease-in-out;
 }
 svg:hover{
-    color: #162b47;
+    color: #12283A;
     cursor: pointer;
 }
 `

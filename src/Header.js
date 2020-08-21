@@ -11,7 +11,7 @@ const SHeader = styled.header`
   h1 {
     font-size: 5rem;
     span {
-      color: #162b47;
+      color: #12283A;
     }
   }
   .para-face {
@@ -54,26 +54,29 @@ const SHeader = styled.header`
 
     button {
       border: none;
-      color: #162b47;
+      color: #12283A;
       padding: 5px 8px;
       font-size: 1rem;
       font-family: "Nunito";
       border-radius: 5px;
+      transition: .5s;
 
       &:hover {
         cursor: pointer;
+        background-color: #12283A;
+        color: white;
       }
     }
 
     a {
       color: black;
       text-decoration: none;
-      border-bottom: 2px solid #162b47;
+      border-bottom: 2px solid #12283A;
       transition: 1s;
 
       &:hover {
         color: white;
-        background: #162b47;
+        background: #12283A;
         padding: 5px;
       }
     }

@@ -10,13 +10,13 @@ display: flex;
 justify-content: space-between;
 font-size: 20px;
 margin-top: 7vh;
-color: #162b47;
+color: #12283A;
 align-items: flex-start;
 
 .logo{
     font-size: 40px;
     span{
-        color: #162b47;
+        color: #12283A;
     }
 }
 
