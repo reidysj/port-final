@@ -177,11 +177,12 @@ const ProjectBox = ({project}) => {
         </div>
 
         <p className='top-desc'>
-       {project.desc}
+       {project.desc[0]}
         </p>
         <p>
-          {project.desc2}
+          {project.desc[1]}
         </p>
+        <p>{project.desc[2]}</p>
         <div className="buttons">
           <button onClick={_ => handleClick(project.ghLink)}>Github</button>
           {project.liveLink && <button onClick={_ => handleClick(project.liveLink)}>Live Site</button>}
