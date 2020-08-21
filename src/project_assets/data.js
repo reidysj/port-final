@@ -9,7 +9,7 @@ export const projects = [
     desc: [
       "A web application that provides a visualization of the rules of Conway's Game of Life.",
       "○ Developed an efficient algorithm and delivered a web application that visualized the Game of Life.",
-      "○ Implmented additional features for a richer user experience. ",
+      "○ Implemented additional features for a richer user experience. ",
     ],
     ghLink: "https://github.com/reidysj/game-of-life",
     liveLink: "https://sr-conway.netlify.app/",
