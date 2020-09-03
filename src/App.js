@@ -7,6 +7,14 @@ import Projects from './Projects'
 import Skills from './Skills'
 import Footer from './Footer'
 
+import ReactGA from 'react-ga'
+
+const trackingId = 'UA-166256756-1'
+
+ReactGA.initialize(trackingId)
+ReactGA.event({category: "App", action: "Loaded"})
+
+
 function App() {
   return (
     <div className="page-container">
