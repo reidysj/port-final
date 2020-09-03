@@ -11,8 +11,11 @@ import ReactGA from 'react-ga'
 
 const trackingId = 'UA-166256756-1'
 
+React.useEffect(_ => {
+  
 ReactGA.initialize(trackingId)
 ReactGA.event({category: "App", action: "Loaded"})
+}, []) 
 
 
 function App() {
