@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css'
 
 import Header from './Header'
@@ -11,14 +11,17 @@ import ReactGA from 'react-ga'
 
 const trackingId = 'UA-166256756-1'
 
-React.useEffect(_ => {
-  
-ReactGA.initialize(trackingId)
-ReactGA.event({category: "App", action: "Loaded"})
-}, []) 
+
 
 
 function App() {
+
+  useEffect(_ => {
+  
+    ReactGA.initialize(trackingId)
+    ReactGA.event({category: "App", action: "Loaded"})
+    }, []) 
+    
   return (
     <div className="page-container">
       <Nav />
