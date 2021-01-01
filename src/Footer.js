@@ -50,7 +50,7 @@ const Footer = () =>{
     return(
         <SFooter>
             <div className='footer-copy'>
-                <p>©2020 Sara Reidy</p>
+                <p>©2021 Sara Reidy</p>
             </div>
                 <a href={resume} target='_blank' rel="noopener noreferrer" className='fancy-link'>Ready for my resume now?</a>
             <Badge />
