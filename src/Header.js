@@ -19,9 +19,8 @@ const SHeader = styled.header`
     justify-content: space-between;
     img {
       border-radius: 50%;
-      transform: scaleX(-1);
-      // margin-right: 150px;
-      height: 250px;
+      margin-right: 50px;
+      height: 300px;
       @media (max-width: 768px){
         display: none;
       }
