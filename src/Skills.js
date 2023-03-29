@@ -1,5 +1,6 @@
 import React from 'react'
-import {SiJavascript, SiNodeDotJs, SiReact, SiCss3, SiPython, SiHtml5, SiGit, SiPostgresql} from 'react-icons/si'
+import {SiJavascript, SiReact, SiCss3, SiPython, SiGit, SiPostgresql, SiAngular, SiTypescript} from 'react-icons/si'
+import {DiLess, DiDotnet} from 'react-icons/di';
 import styled from 'styled-components'
 
 const SkillsContainer = styled.section`
@@ -37,13 +38,15 @@ const Skills = () => {
         <div className='icons'>
 
         <SiJavascript />
-        <SiNodeDotJs />
         <SiReact />
         <SiPython />
         <SiCss3 />
-        <SiHtml5 />
         <SiGit />
         <SiPostgresql />
+        <SiAngular />
+        <SiTypescript />
+        <DiLess />
+        <DiDotnet />
         </div>
         </SkillsContainer>
     )

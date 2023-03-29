@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import resume from './project_assets/Reidy_Resume.pdf'
+import resume from './project_assets/Sreidy_resume_portfolio.pdf'
 import Badge from './Badge'
 
 

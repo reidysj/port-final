@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import {FaLinkedin, FaGithub, FaTwitter} from 'react-icons/fa'
+import {FaLinkedin, FaGithub} from 'react-icons/fa'
 
 const SBadges = styled.span`
-min-width: 150px;
+min-width: 120px;
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 font-size: 32px;
 color: #162b4779;
 
@@ -27,7 +27,6 @@ const Badge = () => {
         <SBadges>
             <a href='https://www.linkedin.com/in/sara-reidy/' target='_blank' rel="noopener noreferrer"><FaLinkedin /></a>
             <a href='https://github.com/reidysj' target='_blank' rel="noopener noreferrer"><FaGithub /></a>
-            <a href='https://twitter.com/SaraReidy' target='_blank' rel="noopener noreferrer"><FaTwitter /></a>
         </SBadges>
     )
 }
